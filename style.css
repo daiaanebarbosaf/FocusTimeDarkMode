@@ -257,9 +257,9 @@ label:active:after {
     align-items: center;
   }
 
-  #counter {
+  /*#counter {
     padding: auto;
-  }
+  }*/
 
   #sounds {
     width: 2rem;
