@@ -58,7 +58,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ![prewiew](.github/prewiew.PNG)
 ![prewiew](.github/prewiew02.PNG)
 
-## Venha ver como ficou e testar as funcionalidades:
+## Venha ver como ficou e teste as funcionalidades:
 
 https://daiaanebarbosaf.github.io/FocusTimeDarkMode/
 
