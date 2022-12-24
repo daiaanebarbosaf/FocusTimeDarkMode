@@ -33,9 +33,7 @@ import {
   svgStop,
   svgSet,
   svgButtonAdd,
-  svgRemoveMinutes,
-
-  hoverCards
+  svgRemoveMinutes
 
 } from "./elements.js"
 
