@@ -175,6 +175,5 @@ export default function ({ controls, timer, sound }){
     svgButtonAdd.style.fill = '#323238'
     svgRemoveMinutes.style.fill = '#323238'
   })
-  
 
 }
