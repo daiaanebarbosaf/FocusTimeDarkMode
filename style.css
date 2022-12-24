@@ -262,8 +262,8 @@ label:active:after {
   }*/
 
   #sounds {
-    width: 2rem;
-    height: 5rem;
+    /*width: 2rem;
+    height: 5rem;*/
      
     display: flex;
     align-self: center;
