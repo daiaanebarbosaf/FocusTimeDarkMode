@@ -221,6 +221,18 @@ export default function ({ controls, timer, sound }){
       svgIconRain.style.fill = '#323238'
       buttonRain.style.background = '#E1E1E6'
     })
+
+    buttonCoffeeShop.addEventListener('click', function(){
+      sound.bgAudioCoffeShop.play()
+      svgIconCoffeeShop.style.fill = '#FFFFFF'
+      buttonCoffeeShop.style.background = '#02799D'
+    })
+  
+    buttonCoffeeShop.addEventListener('dblclick', function(){
+      sound.bgAudioCoffeShop.pause()
+      svgIconCoffeeShop.style.fill = '#323238'
+      buttonCoffeeShop.style.background = '#E1E1E6'
+    })
   })
 
 }
