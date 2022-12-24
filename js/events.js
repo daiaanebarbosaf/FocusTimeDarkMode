@@ -222,14 +222,11 @@ export default function ({ controls, timer, sound }){
   })
 
   toggleDark.addEventListener('click', function(){
-    hoverCards.style.background = '#02799D'
-  })
-
-  toggleDark.addEventListener('click', function(){
     sound.bgAudioFlorest.pause()
     sound.bgAudioRain.pause()
     sound.bgAudioCoffeShop.pause()
     sound.bgAudioFireplace.pause()
+
 
     toggleDefault.classList.remove('hide')
     toggleDark.classList.add('hide')
@@ -253,6 +250,7 @@ export default function ({ controls, timer, sound }){
     svgIconRain.style.fill = '#323238'
     svgIconCoffeeShop.style.fill = '#323238'
     svgIconFireplace.style.fill = '#323238'
+
 
     buttonForest.addEventListener('click', function(){
       sound.bgAudioFlorest.play()
