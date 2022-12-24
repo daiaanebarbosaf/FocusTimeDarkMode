@@ -97,8 +97,8 @@ export default function ({ controls, timer, sound }){
 
   buttonForest.addEventListener('dblclick', function(){
     sound.bgAudioFlorest.pause()
-    svgIconForest.style.fill = '#323238'
-    buttonForest.style.background = '#e0e0e5'
+    svgIconForest.style.fill = '#FFFFFF'
+    buttonForest.style.background = 'rgba(41, 41, 46, 1)'
 
   })
 
@@ -110,8 +110,8 @@ export default function ({ controls, timer, sound }){
 
   buttonRain.addEventListener('dblclick', function(){
     sound.bgAudioRain.pause()
-    svgIconRain.style.fill = '#323238'
-    buttonRain.style.background = '#e0e0e5'
+    svgIconRain.style.fill = '#FFFFFF'
+    buttonRain.style.background = 'rgba(41, 41, 46, 1)'
   })
 
   buttonCoffeeShop.addEventListener('click', function(){
@@ -123,7 +123,7 @@ export default function ({ controls, timer, sound }){
   buttonCoffeeShop.addEventListener('dblclick', function(){
     sound.bgAudioCoffeShop.pause()
     svgIconCoffeeShop.style.fill = '#323238'
-    buttonCoffeeShop.style.background = '#e0e0e5'
+    buttonCoffeeShop.style.background = 'rgba(41, 41, 46, 1)'
   })
 
   buttonFireplace.addEventListener('click', function(){
@@ -134,8 +134,8 @@ export default function ({ controls, timer, sound }){
 
   buttonFireplace.addEventListener('dblclick', function(){
     sound.bgAudioFireplace.pause()
-    svgIconFireplace.style.fill = '#323238'
-    buttonFireplace.style.background = '#e0e0e5'
+    svgIconFireplace.style.fill = '#FFFFFF'
+    buttonFireplace.style.background = 'rgba(41, 41, 46, 1)'
   })
   
   volumeForest.oninput = () => sound.setVolume(volumeForest.value)
