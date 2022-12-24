@@ -33,8 +33,10 @@ import {
   svgStop,
   svgSet,
   svgButtonAdd,
-  svgRemoveMinutes
-  
+  svgRemoveMinutes,
+
+  hoverCards
+
 } from "./elements.js"
 
 
@@ -217,6 +219,10 @@ export default function ({ controls, timer, sound }){
       buttonFireplace.style.background = 'rgba(41, 41, 46, 1)'
     })
 
+  })
+
+  toggleDark.addEventListener('click', function(){
+    hoverCards.style.background = '#02799D'
   })
 
   toggleDark.addEventListener('click', function(){
