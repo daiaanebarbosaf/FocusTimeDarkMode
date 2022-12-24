@@ -58,7 +58,7 @@ main {
 }*/
 
 #counter {
-  width: 32.1rem;
+  width: 42.1rem;
   text-align: center;
 
   /*border: 1px solid blueviolet;
@@ -217,7 +217,9 @@ footer {
 
   #sounds {
     display: flex;
-    align-self: flex-end;
+    align-self: center;
+
+    margin-left: 5rem;
     
     margin-top: 2rem;
   }
