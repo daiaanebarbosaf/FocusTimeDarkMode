@@ -33,10 +33,8 @@ import {
   svgStop,
   svgSet,
   svgButtonAdd,
-  svgRemoveMinutes,
-
-  html,
-  checkbox 
+  svgRemoveMinutes
+  
 } from "./elements.js"
 
 
@@ -88,9 +86,11 @@ export default function ({ controls, timer, sound }){
     timer.updateMinutes(newMinutes)
   })
 
+  
+
   buttonForest.addEventListener('click', function(){
     sound.bgAudioFlorest.play()
-    svgIconForest.style.fill = '#FFFFFF'
+    svgIconForest.style.fill = '#E1E1E6'
     buttonForest.style.background = '#0A3442'
     
   })
@@ -104,7 +104,7 @@ export default function ({ controls, timer, sound }){
 
   buttonRain.addEventListener('click', function(){
     sound.bgAudioRain.play()
-    svgIconRain.style.fill = '#FFFFFF'
+    svgIconRain.style.fill = '#E1E1E6'
     buttonRain.style.background = '#0A3442'
   })
 
@@ -116,7 +116,7 @@ export default function ({ controls, timer, sound }){
 
   buttonCoffeeShop.addEventListener('click', function(){
     sound.bgAudioCoffeShop.play()
-    svgIconCoffeeShop.style.fill = '#FFFFFF'
+    svgIconCoffeeShop.style.fill = '#E1E1E6'
     buttonCoffeeShop.style.background = '#0A3442'
   })
 
@@ -128,7 +128,7 @@ export default function ({ controls, timer, sound }){
 
   buttonFireplace.addEventListener('click', function(){
     sound.bgAudioFireplace.play()
-    svgIconFireplace.style.fill = '#FFFFFF'
+    svgIconFireplace.style.fill = '#E1E1EF'
     buttonFireplace.style.background = '#0A3442'
   })
 

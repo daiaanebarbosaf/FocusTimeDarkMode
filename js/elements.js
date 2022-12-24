@@ -42,10 +42,6 @@ const svgSet = document.querySelector(".set-svg")
 const svgButtonAdd = document.querySelector(".button-add-svg")
 const svgRemoveMinutes = document.querySelector(".button-remove-minutes-svg")
 
-const html = document.querySelector("html")
-const checkbox = document.querySelector("input[name=theme]")
-
-
 
 export {
   buttonPlay,
@@ -84,8 +80,5 @@ export {
   svgStop,
   svgSet,
   svgButtonAdd,
-  svgRemoveMinutes,
-
-  html,
-  checkbox
+  svgRemoveMinutes
  }
