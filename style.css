@@ -49,20 +49,9 @@ main {
   display: none;
 }
 
-/*.play svg path,
-.pause svg path,
-.stop svg path,
-.volume-high svg path,
-.volume-low svg path {
-  fill: var(--text-color);
-}*/
-
 #counter {
   width: 42.1rem;
   text-align: center;
-
-  /*border: 1px solid blueviolet;
-  margin-right: 6rem;*/
 }
 
 #timer {
@@ -76,8 +65,8 @@ main {
 }
 
 #sounds {
-  width: 290px;
-  height: 150px;
+  width: 29rem;
+  height: 15rem;
    
   display: flex;
   flex-wrap: wrap;
@@ -86,6 +75,7 @@ main {
   gap: 1rem;
 
   margin-top: -20px;
+
 
 }
 
@@ -181,7 +171,6 @@ button  {
   cursor: pointer;
 }
 
-
 p {
   /*border: 1px solid red;*/
   text-align: center;
@@ -205,24 +194,6 @@ footer {
   justify-self: end;
 
   padding: 0 4rem 3.2rem;
-}
-
-@media (max-width: 700px) {
-  main {    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-  }
-
-  #sounds {
-    display: flex;
-    align-self: center;
-
-    margin-left: 5rem;
-    
-    margin-top: 2rem;
-  }
 }
 
 /*TOGLEE*/
@@ -273,4 +244,42 @@ input:checked + label::after {
 
 label:active:after {
   width: 25px;
+}
+
+@media (max-width: 700px) {
+  main {    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  #sounds {
+    display: flex;
+    align-self: center;
+
+    margin-left: 9rem;
+    margin-top: 2rem;
+  }
+}
+
+
+@-moz-document url-prefix() {
+  #sounds {
+    width: 35rem;
+  }
+
+  .rain,
+  .fireplace {
+    margin-left: -80px;
+  }
+
+  .slider {
+    width: 40%;
+  }
+
+  p {
+    margin-left: -85px;
+  }
+  
 }
