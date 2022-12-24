@@ -233,6 +233,19 @@ export default function ({ controls, timer, sound }){
       svgIconCoffeeShop.style.fill = '#323238'
       buttonCoffeeShop.style.background = '#E1E1E6'
     })
+
+    buttonFireplace.addEventListener('click', function(){
+      sound.bgAudioFireplace.play()
+      svgIconFireplace.style.fill = '#FFFFFF'
+      buttonFireplace.style.background = '#02799D'
+    })
+  
+    buttonFireplace.addEventListener('dblclick', function(){
+      sound.bgAudioFireplace.pause()
+      svgIconFireplace.style.fill = '#323238'
+      buttonFireplace.style.background = '#E1E1E6'
+    })
+    
   })
 
 }
