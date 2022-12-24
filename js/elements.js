@@ -41,8 +41,6 @@ const svgStop = document.querySelector(".stop-svg")
 const svgSet = document.querySelector(".set-svg")
 const svgButtonAdd = document.querySelector(".button-add-svg")
 const svgRemoveMinutes = document.querySelector(".button-remove-minutes-svg")
-const hoverCards = document.querySelector("#cards button:hover") 
-
 
 export {
   buttonPlay,
@@ -81,7 +79,5 @@ export {
   svgStop,
   svgSet,
   svgButtonAdd,
-  svgRemoveMinutes,
-
-  hoverCards
+  svgRemoveMinutes
  }
