@@ -88,7 +88,55 @@ export default function ({ controls, timer, sound }){
     timer.updateMinutes(newMinutes)
   })
 
+  buttonForest.addEventListener('click', function(){
+    sound.bgAudioFlorest.play()
+    svgIconForest.style.fill = '#FFFFFF'
+    buttonForest.style.background = '#0A3442'
+    
+  })
 
+  buttonForest.addEventListener('dblclick', function(){
+    sound.bgAudioFlorest.pause()
+    svgIconForest.style.fill = '#FFFFFF'
+    buttonForest.style.background = 'rgba(41, 41, 46, 1)'
+
+  })
+
+  buttonRain.addEventListener('click', function(){
+    sound.bgAudioRain.play()
+    svgIconRain.style.fill = '#FFFFFF'
+    buttonRain.style.background = '#0A3442'
+  })
+
+  buttonRain.addEventListener('dblclick', function(){
+    sound.bgAudioRain.pause()
+    svgIconRain.style.fill = '#FFFFFF'
+    buttonRain.style.background = 'rgba(41, 41, 46, 1)'
+  })
+
+  buttonCoffeeShop.addEventListener('click', function(){
+    sound.bgAudioCoffeShop.play()
+    svgIconCoffeeShop.style.fill = '#FFFFFF'
+    buttonCoffeeShop.style.background = '#0A3442'
+  })
+
+  buttonCoffeeShop.addEventListener('dblclick', function(){
+    sound.bgAudioCoffeShop.pause()
+    svgIconCoffeeShop.style.fill = '#FFFFFF'
+    buttonCoffeeShop.style.background = 'rgba(41, 41, 46, 1)'
+  })
+
+  buttonFireplace.addEventListener('click', function(){
+    sound.bgAudioFireplace.play()
+    svgIconFireplace.style.fill = '#FFFFFF'
+    buttonFireplace.style.background = '#0A3442'
+  })
+
+  buttonFireplace.addEventListener('dblclick', function(){
+    sound.bgAudioFireplace.pause()
+    svgIconFireplace.style.fill = '#FFFFFF'
+    buttonFireplace.style.background = 'rgba(41, 41, 46, 1)'
+  })
   
   volumeForest.oninput = () => sound.setVolume(volumeForest.value)
   volumeRain.oninput = () => sound.setVolume(volumeRain.value)
@@ -97,6 +145,12 @@ export default function ({ controls, timer, sound }){
 
   
   toggleDefault.addEventListener('click', function(){
+
+    sound.bgAudioFlorest.pause()
+    sound.bgAudioRain.pause()
+    sound.bgAudioCoffeShop.pause()
+    sound.bgAudioFireplace.pause()
+
     toggleDark.classList.remove('hide')
     toggleDefault.classList.add('hide')
     body.style.background = 'black'
@@ -122,51 +176,43 @@ export default function ({ controls, timer, sound }){
     svgIconFireplace.style.fill = '#E1E1E6'
 
     buttonForest.addEventListener('click', function(){
-      sound.bgAudioFlorest.play()
       svgIconForest.style.fill = '#FFFFFF'
       buttonForest.style.background = '#0A3442'
       
     })
   
     buttonForest.addEventListener('dblclick', function(){
-      sound.bgAudioFlorest.pause()
       svgIconForest.style.fill = '#FFFFFF'
       buttonForest.style.background = 'rgba(41, 41, 46, 1)'
   
     })
   
     buttonRain.addEventListener('click', function(){
-      sound.bgAudioRain.play()
       svgIconRain.style.fill = '#FFFFFF'
       buttonRain.style.background = '#0A3442'
     })
   
     buttonRain.addEventListener('dblclick', function(){
-      sound.bgAudioRain.pause()
       svgIconRain.style.fill = '#FFFFFF'
       buttonRain.style.background = 'rgba(41, 41, 46, 1)'
     })
   
     buttonCoffeeShop.addEventListener('click', function(){
-      sound.bgAudioCoffeShop.play()
       svgIconCoffeeShop.style.fill = '#FFFFFF'
       buttonCoffeeShop.style.background = '#0A3442'
     })
   
     buttonCoffeeShop.addEventListener('dblclick', function(){
-      sound.bgAudioCoffeShop.pause()
       svgIconCoffeeShop.style.fill = '#FFFFFF'
       buttonCoffeeShop.style.background = 'rgba(41, 41, 46, 1)'
     })
   
     buttonFireplace.addEventListener('click', function(){
-      sound.bgAudioFireplace.play()
       svgIconFireplace.style.fill = '#FFFFFF'
       buttonFireplace.style.background = '#0A3442'
     })
   
     buttonFireplace.addEventListener('dblclick', function(){
-      sound.bgAudioFireplace.pause()
       svgIconFireplace.style.fill = '#FFFFFF'
       buttonFireplace.style.background = 'rgba(41, 41, 46, 1)'
     })
@@ -174,6 +220,11 @@ export default function ({ controls, timer, sound }){
   })
 
   toggleDark.addEventListener('click', function(){
+    sound.bgAudioFlorest.pause()
+    sound.bgAudioRain.pause()
+    sound.bgAudioCoffeShop.pause()
+    sound.bgAudioFireplace.pause()
+
     toggleDefault.classList.remove('hide')
     toggleDark.classList.add('hide')
     body.style.background = 'white'
