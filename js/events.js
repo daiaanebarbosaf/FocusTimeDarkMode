@@ -89,41 +89,6 @@ export default function ({ controls, timer, sound }){
   })
 
 
-  buttonRain.addEventListener('click', function(){
-    sound.bgAudioRain.play()
-    svgIconRain.style.fill = '#FFFFFF'
-    buttonRain.style.background = '#0A3442'
-  })
-
-  buttonRain.addEventListener('dblclick', function(){
-    sound.bgAudioRain.pause()
-    svgIconRain.style.fill = '#FFFFFF'
-    buttonRain.style.background = 'rgba(41, 41, 46, 1)'
-  })
-
-  buttonCoffeeShop.addEventListener('click', function(){
-    sound.bgAudioCoffeShop.play()
-    svgIconCoffeeShop.style.fill = '#FFFFFF'
-    buttonCoffeeShop.style.background = '#0A3442'
-  })
-
-  buttonCoffeeShop.addEventListener('dblclick', function(){
-    sound.bgAudioCoffeShop.pause()
-    svgIconCoffeeShop.style.fill = '#323238'
-    buttonCoffeeShop.style.background = 'rgba(41, 41, 46, 1)'
-  })
-
-  buttonFireplace.addEventListener('click', function(){
-    sound.bgAudioFireplace.play()
-    svgIconFireplace.style.fill = '#FFFFFF'
-    buttonFireplace.style.background = '#0A3442'
-  })
-
-  buttonFireplace.addEventListener('dblclick', function(){
-    sound.bgAudioFireplace.pause()
-    svgIconFireplace.style.fill = '#FFFFFF'
-    buttonFireplace.style.background = 'rgba(41, 41, 46, 1)'
-  })
   
   volumeForest.oninput = () => sound.setVolume(volumeForest.value)
   volumeRain.oninput = () => sound.setVolume(volumeRain.value)
@@ -168,6 +133,42 @@ export default function ({ controls, timer, sound }){
       svgIconForest.style.fill = '#FFFFFF'
       buttonForest.style.background = 'rgba(41, 41, 46, 1)'
   
+    })
+  
+    buttonRain.addEventListener('click', function(){
+      sound.bgAudioRain.play()
+      svgIconRain.style.fill = '#FFFFFF'
+      buttonRain.style.background = '#0A3442'
+    })
+  
+    buttonRain.addEventListener('dblclick', function(){
+      sound.bgAudioRain.pause()
+      svgIconRain.style.fill = '#FFFFFF'
+      buttonRain.style.background = 'rgba(41, 41, 46, 1)'
+    })
+  
+    buttonCoffeeShop.addEventListener('click', function(){
+      sound.bgAudioCoffeShop.play()
+      svgIconCoffeeShop.style.fill = '#FFFFFF'
+      buttonCoffeeShop.style.background = '#0A3442'
+    })
+  
+    buttonCoffeeShop.addEventListener('dblclick', function(){
+      sound.bgAudioCoffeShop.pause()
+      svgIconCoffeeShop.style.fill = '#FFFFFF'
+      buttonCoffeeShop.style.background = 'rgba(41, 41, 46, 1)'
+    })
+  
+    buttonFireplace.addEventListener('click', function(){
+      sound.bgAudioFireplace.play()
+      svgIconFireplace.style.fill = '#FFFFFF'
+      buttonFireplace.style.background = '#0A3442'
+    })
+  
+    buttonFireplace.addEventListener('dblclick', function(){
+      sound.bgAudioFireplace.pause()
+      svgIconFireplace.style.fill = '#FFFFFF'
+      buttonFireplace.style.background = 'rgba(41, 41, 46, 1)'
     })
 
   })
