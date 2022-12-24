@@ -159,6 +159,7 @@ export default function ({ controls, timer, sound }){
     svgButtonAdd.style.fill = 'white'
     svgRemoveMinutes.style.fill = 'white'
 
+    buttonForest.style.background = 'rgba(41, 41, 46, 1)'
   })
 
   toggleDark.addEventListener('click', function(){
@@ -174,6 +175,8 @@ export default function ({ controls, timer, sound }){
     svgSet.style.fill = '#323238'
     svgButtonAdd.style.fill = '#323238'
     svgRemoveMinutes.style.fill = '#323238'
+
+    buttonForest.style.background = '#C4C4CC'
   })
 
 }
