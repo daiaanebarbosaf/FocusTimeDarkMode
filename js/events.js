@@ -88,19 +88,7 @@ export default function ({ controls, timer, sound }){
     timer.updateMinutes(newMinutes)
   })
 
-  buttonForest.addEventListener('click', function(){
-    sound.bgAudioFlorest.play()
-    svgIconForest.style.fill = '#FFFFFF'
-    buttonForest.style.background = '#0A3442'
-    
-  })
 
-  buttonForest.addEventListener('dblclick', function(){
-    sound.bgAudioFlorest.pause()
-    svgIconForest.style.fill = '#FFFFFF'
-    buttonForest.style.background = 'rgba(41, 41, 46, 1)'
-
-  })
 
   buttonRain.addEventListener('click', function(){
     sound.bgAudioRain.play()
@@ -169,13 +157,20 @@ export default function ({ controls, timer, sound }){
     svgIconCoffeeShop.style.fill = '#E1E1E6'
     svgIconFireplace.style.fill = '#E1E1E6'
 
-    buttonForest.addEventListener('mouseover', function(){
-      buttonForest.style.background = '#02799D'
+    buttonForest.addEventListener('click', function(){
+      sound.bgAudioFlorest.play()
+      svgIconForest.style.fill = '#FFFFFF'
+      buttonForest.style.background = '#0A3442'
+      
     })
   
-    buttonForest.addEventListener('mouseout', function() {
-      buttonForest.style.background = '#E1E1E6'
+    buttonForest.addEventListener('dblclick', function(){
+      sound.bgAudioFlorest.pause()
+      svgIconForest.style.fill = '#FFFFFF'
+      buttonForest.style.background = 'rgba(41, 41, 46, 1)'
+  
     })
+
   })
 
   toggleDark.addEventListener('click', function(){
@@ -201,6 +196,20 @@ export default function ({ controls, timer, sound }){
     svgIconRain.style.fill = '#323238'
     svgIconCoffeeShop.style.fill = '#323238'
     svgIconFireplace.style.fill = '#323238'
+
+    buttonForest.addEventListener('click', function(){
+      sound.bgAudioFlorest.play()
+      svgIconForest.style.fill = '#FFFFFF'
+      buttonForest.style.background = '#02799D'
+      
+    })
+  
+    buttonForest.addEventListener('dblclick', function(){
+      sound.bgAudioFlorest.pause()
+      svgIconForest.style.fill = '#323238'
+      buttonForest.style.background = '#E1E1E6'
+  
+    })
   })
 
 }
