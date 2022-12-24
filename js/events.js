@@ -89,7 +89,6 @@ export default function ({ controls, timer, sound }){
   })
 
 
-
   buttonRain.addEventListener('click', function(){
     sound.bgAudioRain.play()
     svgIconRain.style.fill = '#FFFFFF'
@@ -209,6 +208,18 @@ export default function ({ controls, timer, sound }){
       svgIconForest.style.fill = '#323238'
       buttonForest.style.background = '#E1E1E6'
   
+    })
+
+    buttonRain.addEventListener('click', function(){
+      sound.bgAudioRain.play()
+      svgIconRain.style.fill = '#FFFFFF'
+      buttonRain.style.background = '#02799D'
+    })
+  
+    buttonRain.addEventListener('dblclick', function(){
+      sound.bgAudioRain.pause()
+      svgIconRain.style.fill = '#323238'
+      buttonRain.style.background = '#E1E1E6'
     })
   })
 
