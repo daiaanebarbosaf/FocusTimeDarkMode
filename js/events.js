@@ -160,6 +160,14 @@ export default function ({ controls, timer, sound }){
     svgRemoveMinutes.style.fill = 'white'
 
     buttonForest.style.background = 'rgba(41, 41, 46, 1)'
+    buttonRain.style.background = 'rgba(41, 41, 46, 1)'
+    buttonCoffeeShop.style.background = 'rgba(41, 41, 46, 1)'
+    buttonFireplace.style.background = 'rgba(41, 41, 46, 1)'
+
+    svgIconForest.style.fill = '#E1E1E6'
+    svgIconRain.style.fill = '#E1E1E6'
+    svgIconCoffeeShop.style.fill = '#E1E1E6'
+    svgIconFireplace.style.fill = '#E1E1E6'
   })
 
   toggleDark.addEventListener('click', function(){
@@ -176,7 +184,15 @@ export default function ({ controls, timer, sound }){
     svgButtonAdd.style.fill = '#323238'
     svgRemoveMinutes.style.fill = '#323238'
 
-    buttonForest.style.background = '#C4C4CC'
+    buttonForest.style.background = '#E1E1E6'
+    buttonRain.style.background = '#E1E1E6'
+    buttonCoffeeShop.style.background = '#E1E1E6'
+    buttonFireplace.style.background = '#E1E1E6'
+
+    svgIconForest.style.fill = '#323238'
+    svgIconRain.style.fill = '#323238'
+    svgIconCoffeeShop.style.fill = '#323238'
+    svgIconFireplace.style.fill = '#323238'
   })
 
 }
