@@ -168,6 +168,14 @@ export default function ({ controls, timer, sound }){
     svgIconRain.style.fill = '#E1E1E6'
     svgIconCoffeeShop.style.fill = '#E1E1E6'
     svgIconFireplace.style.fill = '#E1E1E6'
+
+    buttonForest.addEventListener('mouseover', function(){
+      buttonForest.style.background = '#02799D'
+    })
+  
+    buttonForest.addEventListener('mouseout', function() {
+      buttonForest.style.background = '#E1E1E6'
+    })
   })
 
   toggleDark.addEventListener('click', function(){
