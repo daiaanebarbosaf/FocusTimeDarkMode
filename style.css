@@ -258,14 +258,14 @@ label:active:after {
 
   body {
     justify-content: center;
+    align-items: center;
   }
 
   main {    
-   
+    margin-top: -3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-      
     
   }
 
