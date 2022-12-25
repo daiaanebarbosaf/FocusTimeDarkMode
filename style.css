@@ -276,7 +276,7 @@ label:active:after {
     display: flex;
     align-self: center;
 
-    margin-left: 9rem;
+    margin-left: 2rem;
     margin-top: 2rem;
   }
 
@@ -286,7 +286,6 @@ label:active:after {
 @-moz-document url-prefix() {
   #sounds {
     width: 35rem;
-    margin-left: 80px;
   }
 
   .rain,
