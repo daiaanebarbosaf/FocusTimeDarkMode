@@ -286,6 +286,7 @@ label:active:after {
 @-moz-document url-prefix() {
   #sounds {
     width: 35rem;
+    margin-left: 80px;
   }
 
   .rain,
