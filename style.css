@@ -259,6 +259,7 @@ label:active:after {
   body {
     justify-content: center;
     align-items: center;
+
   }
 
   main {    
@@ -270,9 +271,17 @@ label:active:after {
   }
 
   #sounds {
+    display: flex;
+    align-items: center;
+    align-self: center;
+  
     margin-top: 2rem;
     margin-left: 55px;
+
+    width: 27rem;
+ 
   }
+
 
 }
 
