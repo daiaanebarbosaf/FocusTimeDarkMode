@@ -15,7 +15,7 @@
 
 Esse projeto é um cronometro onde você pode colocar uma musiquinha de fundo e controlar o volume enquanto o tempo passa. Além de poder adicionar o tempo que preferir.
 
-Caso queira colocar minutos diferentes do já programado, basta clicar duas vezes no botão de Pause.
+Caso queira colocar minutos diferentes do já programado, basta clicar duas vezes no botão de Stop.
 
 Ao clicar nos botões a música inicia, para parar, basta clicar duas vezes no botão.
 
