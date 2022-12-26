@@ -269,15 +269,12 @@ label:active:after {
     
   }
 
-
-
   #sounds {
     margin-top: 2rem;
+    margin-left: 8rem;
   }
 
 }
-
-
 
 @-moz-document url-prefix() {
   #sounds {
