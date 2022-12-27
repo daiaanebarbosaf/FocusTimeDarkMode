@@ -10,6 +10,7 @@ html {
   --bg-button:  rgba(41, 41, 46, 1);
   --bg-button-hover: #0A3442;
   --bg-slider: #C4C4CC;
+  --bg-secundary: rgba(210, 210, 238, 0.589);
 }
 
 :root {
@@ -135,13 +136,14 @@ button  {
 }
 
 #show-sentence {
-  display: none;
+  display: flex;
 
-  background-color: var(--bg-slider);
+  background-color: var(--bg-secundary);
   
   border-radius: 12px;
 
-  width: 14rem;
+  width: 20rem;
+  height: 5rem;
   margin: 4rem;
 
   color: #02799D;
