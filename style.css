@@ -135,22 +135,10 @@ button  {
   background-color: var(--bg-button-hover);
 }
 
-#show-sentence {
-  display: flex;
-
-  background-color: var(--bg-secundary);
-  
-  border-radius: 12px;
-
-  width: 20rem;
-  height: 5rem;
-  margin: 4rem;
-
+p {
+  justify-content: center;
+  align-items: center;
   color: #02799D;
-}
-
-#show-sentence:hover{
-  display:block;
 }
 
 /* -----VOLUME------*/
